@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alky-Wallet | Transacciones</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- CSS INTERNO -->
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <!-- JS PROPIOS -->
+
+    <script defer src="./assets/js/transactions.fragments.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Alky-Wallet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                    <a class="nav-link" href="./deposit.html">Depósito</a>
+                    <a class="nav-link" href="./sendmoney.html">Enviar Dinero</a>
+                    <a class="nav-link active" href="./transactions.html" aria-current="page">Transacciones</a>
+                    <a class="nav-link" href="./login.html">Ingresar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container text-center">
+            <p class="eyebrow">Historial</p>
+            <h1>Últimos movimientos</h1>
+            <p class="lead mb-0">Revisa ingresos y egresos recientes de la cuenta simulada.</p>
+        </div>
+    </header>
+
+    <main class="container pb-5">
+
+        <section class="row justify-content-center g-4">
+            <div class="col-12 col-lg-5">
+                <article class="balance-card h-100">
+                    <p class="mb-2">Balance de cuenta</p>
+                    <h2 class="balance-amount">$ <span id="balance">0</span></h2>
+                    <p class="mb-0">Resumen disponible para consultar el estado general de la wallet.</p>
+                </article>
+            </div>
+            <div class="col-12 col-lg-7">
+                <article class="app-panel">
+                    <h2 class="h4 mb-3">Registro de transacciones</h2>
+                    <ul class="list-group" id="listaTransacciones">
+                        <!-- AQUÍ SE AGREGARÁN LAS TRANSACCIONES -->
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    
+</body>
+
+</html>
