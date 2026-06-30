@@ -166,3 +166,7 @@ Por este motivo, se recomienda tener conexión a internet al abrir el proyecto p
 ## Autoría
 
 Proyecto desarrollado para una entrega académica de Front-end.
+
+## Contacto
+- Para preguntas o mejoras, abre un issue en el repositorio o contacta al mantenedor.
+github: [Repositorio proyecto](https://github.com/andreagarrido626-hub/Entrega-m2)
